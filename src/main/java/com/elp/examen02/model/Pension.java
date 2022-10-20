@@ -1,11 +1,12 @@
 package com.elp.examen02.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
 
-public class Pensin {
+import javax.persistence.*;
+
+@Data
+@Entity
+public class Pension {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +14,6 @@ public class Pensin {
     private Integer idpension;
     private String monto;
     private String fecha;
-    private Integer idAlumno;
+
 
 }

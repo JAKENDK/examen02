@@ -1,11 +1,12 @@
 package com.elp.examen02.model;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
 
-public class Alumn {
+import javax.persistence.*;
+
+@Data
+@Entity
+public class Alumno {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
